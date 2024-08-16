@@ -10,15 +10,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.createhive.createculinary.CreateCulinary;
 
+import com.simibubi.create.Create;
+
 public class ModItems {
 
-    public static final Item GEAR_COOKIES = registerItem("gear_cookies", new Item(new FabricItemSettings()));
-    public static final Item ENERGY_DRINK = registerItem("energy_drink", new Item(new FabricItemSettings()));
-    public static final Item PLATE = registerItem("plate", new Item(new FabricItemSettings()));
+    public static final Item GEAR_COOKIES = registerItem("gear_cookies", new Item(new FabricItemSettings().food(ModFoodComponents.GEAR_COOKIES)));
+    public static final Item DISH = registerItem("dish", new Item(new FabricItemSettings()));
+    public static final Item DIRTY_DISH = registerItem("dirty_dish", new Item(new FabricItemSettings()));
+    public static final Item PASTA_DISH = registerItem("pasta_dish", new Item(new FabricItemSettings().food(ModFoodComponents.PASTA_DISH)));
 
-
-    private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries) {
-        entries.add(GEAR_COOKIES);
+    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
     }
 
     private static Item registerItem(String name, Item item) {
@@ -28,6 +29,6 @@ public class ModItems {
     public static void registerModItems() {
         CreateCulinary.LOGGER.info("Registering Mod Items for " + CreateCulinary.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }
