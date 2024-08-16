@@ -5,7 +5,8 @@
 	"name": "Create: Culinary",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Quales",
+		"Mayreader"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -17,6 +18,9 @@
 	"entrypoints": {
 		"main": [
 			"org.createhive.createculinary.CreateCulinary"
+		],
+		"client": [
+			"org.createhive.createculinary.CreateCulinaryClient"
 		],
 		"fabric-datagen": [
 			"org.createhive.createculinary.CreateCulinaryDataGenerator"
