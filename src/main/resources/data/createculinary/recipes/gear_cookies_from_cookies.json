@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "food",
+    "result": {
+        "item": "createculinary:gear_cookies",
+        "count": 1
+    },
+    "pattern": [
+        " c ",
+        "c c",
+        " c "
+    ],
+    "key": {
+        "c": {
+            "item": "minecraft:cookie"
+        }
+    }
+}
