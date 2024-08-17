@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.createhive.createculinary.CreateCulinary;
 import org.createhive.createculinary.fluid.ModFluids;
+import org.createhive.createculinary.item.type.MilkshakeItem;
 import org.createhive.createculinary.item.type.PlateItem;
 
 public class ModItems {
@@ -21,9 +22,9 @@ public class ModItems {
 
     // Milkshakes
     public static final Item MILKSHAKE_CUP = registerItem("milkshake_cup", new Item(new FabricItemSettings()));
-    public static final Item STRAWBERRY_MILKSHAKE = registerItem("strawberry_milkshake", new Item(new FabricItemSettings()));
-    public static final Item CHOCOLATE_MILKSHAKE = registerItem("chocolate_milkshake", new Item(new FabricItemSettings()));
-    public static final Item BANANA_MILKSHAKE = registerItem("banana_milkshake", new Item(new FabricItemSettings()));
+    public static final MilkshakeItem STRAWBERRY_MILKSHAKE = (MilkshakeItem) registerItem("strawberry_milkshake", new MilkshakeItem(new FabricItemSettings()));
+    public static final MilkshakeItem CHOCOLATE_MILKSHAKE = (MilkshakeItem) registerItem("chocolate_milkshake", new MilkshakeItem(new FabricItemSettings()));
+    public static final MilkshakeItem BANANA_MILKSHAKE = (MilkshakeItem) registerItem("banana_milkshake", new MilkshakeItem(new FabricItemSettings()));
 
     public static final Item CHOCOLATE_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.CHOCOLATE_MILK_STILL,
             new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));

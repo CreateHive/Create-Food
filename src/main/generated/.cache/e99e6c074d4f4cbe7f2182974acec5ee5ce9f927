@@ -1,5 +1,10 @@
-// 1.20.1	2024-08-17T01:19:42.8069275	Create: Culinary/Model Definitions
+// 1.20.1	2024-08-17T11:10:40.0721229	Create: Culinary/Model Definitions
+54a4e22fd539bde642899a3ce414e0a67504b066 assets\createculinary\models\item\strawberry_milkshake.json
+94e728c24dacd469260bc71b643de885434a3be6 assets\createculinary\models\item\chocolate_milkshake.json
 8f4319ccf38dbd6ac3d7c3408b833dfaf962707c assets\createculinary\models\item\dish.json
 981ddfc614e4854fd9530418ab024ff53e9a6286 assets\createculinary\models\item\pasta_dish.json
+96bb56b88f90a6ff7a612ab7fef2edabc3c334f8 assets\createculinary\models\item\banana_milkshake.json
+53c1866f314c258101e5227f9c7eb1a48f8a2acd assets\createculinary\models\item\chocolate_milk.json
 82b26d5d493b1af95cfe9622e0d042ba14a0ccf1 assets\createculinary\models\item\dirty_dish.json
+3fe040a72fbcff290320b38d2944a3b7d669bdd6 assets\createculinary\models\item\milkshake_cup.json
 2a4a335e0011af539ee47e10b2e2a937dcead200 assets\createculinary\models\item\gear_cookies.json
