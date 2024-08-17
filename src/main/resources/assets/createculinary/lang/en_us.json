@@ -12,5 +12,7 @@
   "item.createculinary.strawberry_milkshake": "Strawberry Milkshake",
   "item.createculinary.banana_milkshake": "Banana Milkshake",
 
-  "block.createculinary.chocolate_milk_block": "Chocolate Milk Block"
+  "block.createculinary.chocolate_milk_block": "Chocolate Milk Block",
+  "block.createculinary.banana_milk_block": "Banana Milk Block",
+  "block.createculinary.strawberry_milk_block": "Strawberry Milk Block"
 }

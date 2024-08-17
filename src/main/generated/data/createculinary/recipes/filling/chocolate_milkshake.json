@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createculinary:milkshake_cup"
+    },
+    {
+      "fluidTag": "createculinary:chocolate_milk",
+      "nbt": {},
+      "amount": 750
+    }
+  ],
+  "results": [
+    {
+      "item": "createculinary:chocolate_milkshake"
+    }
+  ]
+}
