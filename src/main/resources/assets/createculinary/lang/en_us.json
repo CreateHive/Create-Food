@@ -5,9 +5,12 @@
   "item.createculinary.dish": "Dish",
   "item.createculinary.dirty_dish": "Dirty dish",
   "item.createculinary.pasta_dish": "Dish of pasta",
+  "item.createculinary.chocolate_milk": "Bucket of Chocolate Milk",
 
   "item.createculinary.milkshake_cup": "Milkshake Cup",
   "item.createculinary.chocolate_milkshake": "Chocolate Milkshake",
   "item.createculinary.strawberry_milkshake": "Strawberry Milkshake",
-  "item.createculinary.banana_milkshake": "Banana Milkshake"
+  "item.createculinary.banana_milkshake": "Banana Milkshake",
+
+  "block.createculinary.chocolate_milk_block": "Chocolate Milk Block"
 }
