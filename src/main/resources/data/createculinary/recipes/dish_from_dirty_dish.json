@@ -1,0 +1,19 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "item": "createculinary:dirty_dish"
+
+        },
+        {
+            "amount": 2500,
+            "fluid": "minecraft:water"
+        }
+    ],
+    "results": [
+        {
+
+            "item": "createculinary:dish"
+        }
+    ]
+}
