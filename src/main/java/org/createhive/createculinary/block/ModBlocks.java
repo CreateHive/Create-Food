@@ -14,9 +14,17 @@ import org.createhive.createculinary.item.ModItemGroups;
 
 public class ModBlocks {
     private static Object ModItemGroup;
-    public static final Block CHOCOLATE_MILK_BLOCK = registerBlockWithoutBlockItem("chocolate_fluid_block",
+    public static final Block CHOCOLATE_MILK_BLOCK = registerBlockWithoutBlockItem("chocolate_milk_block",
             new ModFluidBlock(ModFluids.CHOCOLATE_MILK_STILL, FabricBlockSettings.create()
-                    .noCollision().nonOpaque().dropsNothing()));
+                    .nonOpaque().dropsNothing()));
+
+    public static final Block STRAWBERRY_MILK_BLOCK = registerBlockWithoutBlockItem("strawberry_milk_block",
+            new ModFluidBlock(ModFluids.STRAWBERRY_MILK_STILL, FabricBlockSettings.create()
+                    .nonOpaque().dropsNothing()));
+
+    public static final Block BANANA_MILK_BLOCK = registerBlockWithoutBlockItem("banana_milk_block",
+            new ModFluidBlock(ModFluids.BANANA_MILK_STILL, FabricBlockSettings.create()
+                    .nonOpaque().dropsNothing()));
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(CreateCulinary.MOD_ID, name), block);

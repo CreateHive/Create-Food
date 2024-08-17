@@ -29,6 +29,13 @@ public class ModItems {
     public static final Item CHOCOLATE_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.CHOCOLATE_MILK_STILL,
             new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
+    public static final Item STRAWBERRY_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.STRAWBERRY_MILK_STILL,
+            new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+    public static final Item BANANA_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.BANANA_MILK_STILL,
+            new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
     }
 
