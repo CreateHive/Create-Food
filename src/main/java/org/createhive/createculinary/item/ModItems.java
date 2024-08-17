@@ -11,9 +11,13 @@ import org.createhive.createculinary.item.type.PlateItem;
 
 public class ModItems {
     public static final Item GEAR_COOKIES = registerItem("gear_cookies", new Item(new FabricItemSettings().food(ModFoodComponents.GEAR_COOKIES)));
+    // Dishies
     public static final Item DISH = registerItem("dish", new Item(new FabricItemSettings()));
     public static final Item DIRTY_DISH = registerItem("dirty_dish", new Item(new FabricItemSettings()));
     public static final PlateItem PASTA_DISH = (PlateItem) registerItem("pasta_dish", new PlateItem(new FabricItemSettings().food(ModFoodComponents.PASTA_DISH)));
+
+    // Milkshakes
+    public static final Item MILKSHAKE_CUP = registerItem("milkshake_cup", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
     }

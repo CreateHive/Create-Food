@@ -15,9 +15,13 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.createculinary"))
                     .icon(() -> new ItemStack(ModItems.GEAR_COOKIES)).entries((displayContext, entries) -> {
                         entries.add(ModItems.GEAR_COOKIES);
+                        // Dishies
                         entries.add(ModItems.DISH);
                         entries.add(ModItems.DIRTY_DISH);
                         entries.add(ModItems.PASTA_DISH);
+
+                        // Milkshakes
+                        entries.add(ModItems.MILKSHAKE_CUP);
                     }).build());
 
     public static void registerItemGroups() {

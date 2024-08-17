@@ -20,8 +20,13 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.GEAR_COOKIES, Models.GENERATED);
+
+        // Dishies
         itemModelGenerator.register(ModItems.DISH, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIRTY_DISH, Models.GENERATED);
         itemModelGenerator.register(ModItems.PASTA_DISH, Models.GENERATED);
+
+        // Milkshakes
+        itemModelGenerator.register(ModItems.MILKSHAKE_CUP, Models.GENERATED);
     }
 }
