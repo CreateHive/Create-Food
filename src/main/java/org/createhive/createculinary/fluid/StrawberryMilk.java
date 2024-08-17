@@ -4,7 +4,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.fluid.*;
+import net.minecraft.fluid.FlowableFluid;
+import net.minecraft.fluid.Fluid;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.particle.ParticleTypes;
@@ -17,7 +19,10 @@ import net.minecraft.state.property.Property;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
-import net.minecraft.world.*;
+import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldAccess;
+import net.minecraft.world.WorldView;
 import org.createhive.createculinary.block.ModBlocks;
 import org.createhive.createculinary.item.ModItems;
 import org.jetbrains.annotations.Nullable;
@@ -37,16 +42,16 @@ public class StrawberryMilk extends FlowableFluid {
     }
 
     public Item getBucketItem() {
-        return ModItems.STRAWBERRY_MILKSHAKE;
+        return ModItems.STRAWBERRY_MILK_BUCKET;
     }
 
     public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {
-        if (!state.isStill() && !(Boolean)state.get(FALLING)) {
+        if (!state.isStill() && !(Boolean) state.get(FALLING)) {
             if (random.nextInt(64) == 0) {
-                world.playSound((double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, SoundEvents.BLOCK_WATER_AMBIENT, SoundCategory.BLOCKS, random.nextFloat() * 0.25F + 0.75F, random.nextFloat() + 0.5F, false);
+                world.playSound((double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.BLOCK_WATER_AMBIENT, SoundCategory.BLOCKS, random.nextFloat() * 0.25F + 0.75F, random.nextFloat() + 0.5F, false);
             }
         } else if (random.nextInt(10) == 0) {
-            world.addParticle(ParticleTypes.UNDERWATER, (double)pos.getX() + random.nextDouble(), (double)pos.getY() + random.nextDouble(), (double)pos.getZ() + random.nextDouble(), 0.0D, 0.0D, 0.0D);
+            world.addParticle(ParticleTypes.UNDERWATER, (double) pos.getX() + random.nextDouble(), (double) pos.getY() + random.nextDouble(), (double) pos.getZ() + random.nextDouble(), 0.0D, 0.0D, 0.0D);
         }
     }
 
@@ -116,7 +121,7 @@ public class StrawberryMilk extends FlowableFluid {
         }
 
         public int getLevel(FluidState state) {
-            return (Integer)state.get(LEVEL);
+            return (Integer) state.get(LEVEL);
         }
 
         public boolean isStill(FluidState state) {

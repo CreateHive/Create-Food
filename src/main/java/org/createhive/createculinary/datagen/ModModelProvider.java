@@ -29,7 +29,9 @@ public class ModModelProvider extends FabricModelProvider {
         // Milkshakes
         itemModelGenerator.register(ModItems.MILKSHAKE_CUP, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHOCOLATE_MILKSHAKE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.CHOCOLATE_MILK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHOCOLATE_MILK_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STRAWBERRY_MILK_BUCKET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BANANA_MILK_BUCKET, Models.GENERATED);
         itemModelGenerator.register(ModItems.BANANA_MILKSHAKE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STRAWBERRY_MILKSHAKE, Models.GENERATED);
     }

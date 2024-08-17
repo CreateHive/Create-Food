@@ -2,6 +2,10 @@
   "values": [
     "createculinary:chocolate_milk_still",
     "createculinary:chocolate_milk_flowing",
+    "createculinary:strawberry_milk_still",
+    "createculinary:strawberry_milk_flowing",
+    "createculinary:banana_milk_still",
+    "createculinary:banana_milk_flowing",
     "minecraft:water",
     "minecraft:flowing_water"
   ]

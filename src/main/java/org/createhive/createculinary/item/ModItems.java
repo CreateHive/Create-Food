@@ -26,13 +26,13 @@ public class ModItems {
     public static final MilkshakeItem CHOCOLATE_MILKSHAKE = (MilkshakeItem) registerItem("chocolate_milkshake", new MilkshakeItem(new FabricItemSettings()));
     public static final MilkshakeItem BANANA_MILKSHAKE = (MilkshakeItem) registerItem("banana_milkshake", new MilkshakeItem(new FabricItemSettings()));
 
-    public static final Item CHOCOLATE_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.CHOCOLATE_MILK_STILL,
+    public static final Item CHOCOLATE_MILK_BUCKET = registerItem("chocolate_milk_bucket", new BucketItem(ModFluids.CHOCOLATE_MILK_STILL,
             new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
-    public static final Item STRAWBERRY_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.STRAWBERRY_MILK_STILL,
+    public static final Item STRAWBERRY_MILK_BUCKET = registerItem("strawberry_milk_bucket", new BucketItem(ModFluids.STRAWBERRY_MILK_STILL,
             new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
-    public static final Item BANANA_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.BANANA_MILK_STILL,
+    public static final Item BANANA_MILK_BUCKET = registerItem("banana_milk_bucket", new BucketItem(ModFluids.BANANA_MILK_STILL,
             new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
 
