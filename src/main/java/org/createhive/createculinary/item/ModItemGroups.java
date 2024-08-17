@@ -22,6 +22,9 @@ public class ModItemGroups {
 
                         // Milkshakes
                         entries.add(ModItems.MILKSHAKE_CUP);
+                        entries.add(ModItems.STRAWBERRY_MILKSHAKE);
+                        entries.add(ModItems.CHOCOLATE_MILKSHAKE);
+                        entries.add(ModItems.BANANA_MILKSHAKE);
                     }).build());
 
     public static void registerItemGroups() {

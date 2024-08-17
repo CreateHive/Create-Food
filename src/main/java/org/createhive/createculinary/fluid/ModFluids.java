@@ -2,6 +2,7 @@ package org.createhive.createculinary.fluid;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
+import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.BucketItem;
@@ -12,17 +13,10 @@ import net.minecraft.util.Identifier;
 import org.createhive.createculinary.CreateCulinary;
 
 public class ModFluids {
-    private static Fluid RegisterFluid(String name, Fluid fluid) {
-        registerBucket(name, fluid);
-        return Registry.register(Registries.FLUID, new Identifier(CreateCulinary.MOD_ID, name), fluid);
-    }
+    public static final FlowableFluid CHOCOLATE_MILK_STILL = register("chocolate_milk_still", new ChocolateMilk.Still());
+    public static final FlowableFluid CHOCOLATE_MILK_FLOWING = register("chocolate_milk_flowing", new ChocolateMilk.Flowing());
 
-    private static BucketItem registerBucket(String name, Fluid fluid) {
-        return Registry.register(Registries.ITEM, new Identifier(CreateCulinary.MOD_ID, name),
-                new BucketItem(fluid, new FabricItemSettings()));
-    }
-
-    public static void registerModBlocks() {
-        CreateCulinary.LOGGER.info("Registering ModFluids for " + CreateCulinary.MOD_ID);
+    private static FlowableFluid register(String name, FlowableFluid flowableFluid) {
+        return Registry.register(Registries.FLUID, new Identifier(CreateCulinary.MOD_ID, name), flowableFluid);
     }
 }

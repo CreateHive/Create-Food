@@ -2,11 +2,14 @@ package org.createhive.createculinary.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import org.createhive.createculinary.CreateCulinary;
+import org.createhive.createculinary.fluid.ModFluids;
 import org.createhive.createculinary.item.type.PlateItem;
 
 public class ModItems {
@@ -18,6 +21,12 @@ public class ModItems {
 
     // Milkshakes
     public static final Item MILKSHAKE_CUP = registerItem("milkshake_cup", new Item(new FabricItemSettings()));
+    public static final Item STRAWBERRY_MILKSHAKE = registerItem("strawberry_milkshake", new Item(new FabricItemSettings()));
+    public static final Item CHOCOLATE_MILKSHAKE = registerItem("chocolate_milkshake", new Item(new FabricItemSettings()));
+    public static final Item BANANA_MILKSHAKE = registerItem("banana_milkshake", new Item(new FabricItemSettings()));
+
+    public static final Item CHOCOLATE_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.CHOCOLATE_MILK_STILL,
+            new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
     }
