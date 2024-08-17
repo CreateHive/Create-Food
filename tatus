@@ -1,0 +1,97 @@
+warning: in the working copy of 'src/main/generated/assets/createculinary/models/item/dirty_dish.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/generated/assets/createculinary/models/item/dish.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/generated/assets/createculinary/models/item/gear_cookies.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/generated/assets/createculinary/models/item/pasta_dish.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/generated/data/createculinary/advancements/recipes/food/gear_cookies.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/generated/data/createculinary/recipes/gear_cookies.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/org/createhive/createculinary/item/type/MilkshakeItem.java', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/main/generated/.cache/10b92ff9fd1e93812ad5637a8a6b5c6d00cb7869 b/src/main/generated/.cache/10b92ff9fd1e93812ad5637a8a6b5c6d00cb7869[m
+[1mindex d668d85..bbcb880 100644[m
+[1m--- a/src/main/generated/.cache/10b92ff9fd1e93812ad5637a8a6b5c6d00cb7869[m
+[1m+++ b/src/main/generated/.cache/10b92ff9fd1e93812ad5637a8a6b5c6d00cb7869[m
+[36m@@ -1 +1 @@[m
+[31m-// 1.20.1	2024-08-17T01:19:42.8034043	Create: Culinary/Tags for minecraft:item[m
+[32m+[m[32m// 1.20.1	2024-08-17T11:10:40.0701285	Create: Culinary/Tags for minecraft:item[m
+[1mdiff --git a/src/main/generated/.cache/701c4a8861bccd3dc15fc39fbcb942cfab55410e b/src/main/generated/.cache/701c4a8861bccd3dc15fc39fbcb942cfab55410e[m
+[1mindex e5ea19a..774b6fc 100644[m
+[1m--- a/src/main/generated/.cache/701c4a8861bccd3dc15fc39fbcb942cfab55410e[m
+[1m+++ b/src/main/generated/.cache/701c4a8861bccd3dc15fc39fbcb942cfab55410e[m
+[36m@@ -1,3 +1,3 @@[m
+[31m-// 1.20.1	2024-08-17T01:19:42.8099096	Create: Culinary/Recipes[m
+[32m+[m[32m// 1.20.1	2024-08-17T11:10:40.0741242	Create: Culinary/Recipes[m
+ 44f0ee2274087551083cc5d0501a74a99f104cd2 data\createculinary\advancements\recipes\food\gear_cookies.json[m
+ 0b2b04aa68ea2043493b654ce73833f9876018f0 data\createculinary\recipes\gear_cookies.json[m
+[1mdiff --git a/src/main/generated/.cache/e99e6c074d4f4cbe7f2182974acec5ee5ce9f927 b/src/main/generated/.cache/e99e6c074d4f4cbe7f2182974acec5ee5ce9f927[m
+[1mindex 9093793..304dbf4 100644[m
+[1m--- a/src/main/generated/.cache/e99e6c074d4f4cbe7f2182974acec5ee5ce9f927[m
+[1m+++ b/src/main/generated/.cache/e99e6c074d4f4cbe7f2182974acec5ee5ce9f927[m
+[36m@@ -1,5 +1,10 @@[m
+[31m-// 1.20.1	2024-08-17T01:19:42.8069275	Create: Culinary/Model Definitions[m
+[32m+[m[32m// 1.20.1	2024-08-17T11:10:40.0721229	Create: Culinary/Model Definitions[m
+[32m+[m[32m54a4e22fd539bde642899a3ce414e0a67504b066 assets\createculinary\models\item\strawberry_milkshake.json[m
+[32m+[m[32m94e728c24dacd469260bc71b643de885434a3be6 assets\createculinary\models\item\chocolate_milkshake.json[m
+ 8f4319ccf38dbd6ac3d7c3408b833dfaf962707c assets\createculinary\models\item\dish.json[m
+ 981ddfc614e4854fd9530418ab024ff53e9a6286 assets\createculinary\models\item\pasta_dish.json[m
+[32m+[m[32m96bb56b88f90a6ff7a612ab7fef2edabc3c334f8 assets\createculinary\models\item\banana_milkshake.json[m
+[32m+[m[32m53c1866f314c258101e5227f9c7eb1a48f8a2acd assets\createculinary\models\item\chocolate_milk.json[m
+ 82b26d5d493b1af95cfe9622e0d042ba14a0ccf1 assets\createculinary\models\item\dirty_dish.json[m
+[32m+[m[32m3fe040a72fbcff290320b38d2944a3b7d669bdd6 assets\createculinary\models\item\milkshake_cup.json[m
+ 2a4a335e0011af539ee47e10b2e2a937dcead200 assets\createculinary\models\item\gear_cookies.json[m
+[1mdiff --git a/src/main/java/org/createhive/createculinary/item/ModItems.java b/src/main/java/org/createhive/createculinary/item/ModItems.java[m
+[1mindex a40dbce..2bc5023 100644[m
+[1m--- a/src/main/java/org/createhive/createculinary/item/ModItems.java[m
+[1m+++ b/src/main/java/org/createhive/createculinary/item/ModItems.java[m
+[36m@@ -10,6 +10,7 @@[m [mimport net.minecraft.registry.Registry;[m
+ import net.minecraft.util.Identifier;[m
+ import org.createhive.createculinary.CreateCulinary;[m
+ import org.createhive.createculinary.fluid.ModFluids;[m
+[32m+[m[32mimport org.createhive.createculinary.item.type.MilkshakeItem;[m
+ import org.createhive.createculinary.item.type.PlateItem;[m
+ [m
+ public class ModItems {[m
+[36m@@ -21,9 +22,9 @@[m [mpublic class ModItems {[m
+ [m
+     // Milkshakes[m
+     public static final Item MILKSHAKE_CUP = registerItem("milkshake_cup", new Item(new FabricItemSettings()));[m
+[31m-    public static final Item STRAWBERRY_MILKSHAKE = registerItem("strawberry_milkshake", new Item(new FabricItemSettings()));[m
+[31m-    public static final Item CHOCOLATE_MILKSHAKE = registerItem("chocolate_milkshake", new Item(new FabricItemSettings()));[m
+[31m-    public static final Item BANANA_MILKSHAKE = registerItem("banana_milkshake", new Item(new FabricItemSettings()));[m
+[32m+[m[32m    public static final MilkshakeItem STRAWBERRY_MILKSHAKE = (MilkshakeItem) registerItem("strawberry_milkshake", new MilkshakeItem(new FabricItemSettings()));[m
+[32m+[m[32m    public static final MilkshakeItem CHOCOLATE_MILKSHAKE = (MilkshakeItem) registerItem("chocolate_milkshake", new MilkshakeItem(new FabricItemSettings()));[m
+[32m+[m[32m    public static final MilkshakeItem BANANA_MILKSHAKE = (MilkshakeItem) registerItem("banana_milkshake", new MilkshakeItem(new FabricItemSettings()));[m
+ [m
+     public static final Item CHOCOLATE_MILK = registerItem("chocolate_milk", new BucketItem(ModFluids.CHOCOLATE_MILK_STILL,[m
+             new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));[m
+[1mdiff --git a/src/main/java/org/createhive/createculinary/item/type/MilkshakeItem.java b/src/main/java/org/createhive/createculinary/item/type/MilkshakeItem.java[m
+[1mindex ad4fe05..206b043 100644[m
+[1m--- a/src/main/java/org/createhive/createculinary/item/type/MilkshakeItem.java[m
+[1m+++ b/src/main/java/org/createhive/createculinary/item/type/MilkshakeItem.java[m
+[36m@@ -1,2 +1,27 @@[m
+[31m-package org.createhive.createculinary.item.type;public class MilkshakeItem {[m
+[32m+[m[32mpackage org.createhive.createculinary.item.type;[m
+[32m+[m
+[32m+[m[32mimport net.minecraft.entity.LivingEntity;[m
+[32m+[m[32mimport net.minecraft.entity.player.PlayerEntity;[m
+[32m+[m[32mimport net.minecraft.item.Item;[m
+[32m+[m[32mimport net.minecraft.item.ItemStack;[m
+[32m+[m[32mimport net.minecraft.world.World;[m
+[32m+[m[32mimport org.createhive.createculinary.item.ModItems;[m
+[32m+[m
+[32m+[m[32mpublic class MilkshakeItem extends Item {[m
+[32m+[m[32m    public MilkshakeItem(Settings settings) {[m
+[32m+[m[32m        super(settings);[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {[m
+[32m+[m[32m        ItemStack retval = new ItemStack(ModItems.MILKSHAKE_CUP);[m
+[32m+[m[32m        super.finishUsing(stack, world, user);[m
+[32m+[m[32m        if (stack.isEmpty()) {[m
+[32m+[m[32m            return retval;[m
+[32m+[m[32m        } else {[m
+[32m+[m[32m            if (user instanceof PlayerEntity player && !player.isCreative()) {[m
+[32m+[m[32m                player.getInventory().offerOrDrop(retval);[m
+[32m+[m[32m            }[m
+[32m+[m[32m            return stack;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+ }[m
