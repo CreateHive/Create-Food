@@ -5,12 +5,17 @@
   "item.createculinary.dish": "Dish",
   "item.createculinary.dirty_dish": "Dirty dish",
   "item.createculinary.pasta_dish": "Dish of pasta",
-  "item.createculinary.chocolate_milk": "Bucket of Chocolate Milk",
+
+  "item.createculinary.chocolate_milk_bucket": "Chocolate Milk Bucket",
+  "item.createculinary.strawberry_milk_bucket": "Strawberry Milk Bucket",
+  "item.createculinary.banana_milk_bucket": "Banana Milk Bucket",
 
   "item.createculinary.milkshake_cup": "Milkshake Cup",
   "item.createculinary.chocolate_milkshake": "Chocolate Milkshake",
   "item.createculinary.strawberry_milkshake": "Strawberry Milkshake",
   "item.createculinary.banana_milkshake": "Banana Milkshake",
 
-  "block.createculinary.chocolate_milk_block": "Chocolate Milk Block"
+  "block.createculinary.chocolate_milk_block": "Chocolate Milk Block",
+  "block.createculinary.strawberry_milk_block": "Strawberry Milk Block",
+  "block.createculinary.banana_milk_block": "Banana Milk Block"
 }
