@@ -5,8 +5,8 @@
       "item": "createculinary:milkshake_cup"
     },
     {
-      "fluidTag": "createculinary:chocolate_milk",
-      "nbt": {},
+      "fluid": "createculinary:chocolate_milk",
+      "nbt":{},
       "amount": 750
     }
   ],

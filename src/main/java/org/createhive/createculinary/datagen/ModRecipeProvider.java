@@ -30,5 +30,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('x', Items.COOKIE)
                 .criterion(hasItem(Items.COOKIE), conditionsFromItem(Items.COOKIE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GEAR_COOKIES)));
+
     }
 }
