@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 public class CreateCulinary implements ModInitializer {
 	public static final String MOD_ID = "createculinary";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final String MOD_GROUP = "createculinary";
 
 	@Override
 	public void onInitialize() {

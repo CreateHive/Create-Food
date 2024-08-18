@@ -21,6 +21,7 @@ import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributeHandler;
 import net.fabricmc.fabric.api.transfer.v1.fluid.base.EmptyItemFluidStorage;
 import net.fabricmc.fabric.api.transfer.v1.fluid.base.FullItemFluidStorage;
 import net.fabricmc.fabric.api.transfer.v1.item.ItemVariant;
+import org.createhive.createculinary.CreateCulinary;
 
 
 public class CulinaryFluids {
@@ -28,7 +29,7 @@ public class CulinaryFluids {
         FluidPlaceBlockCallback.EVENT.register(CulinaryFluids::whenFluidsMeet);
     }
     private static final CreateRegistrate REGISTRATE = CreateGarnished.registrate()
-            .setCreativeTab(GarnishedTabs.GARNISHED.key());
+            .setCreativeTab(CreateCulinary.MOD_GROUP);
 
     private static ResourceLocation createLocation(String fluid, boolean isFlowing) {
         String getMotion;
